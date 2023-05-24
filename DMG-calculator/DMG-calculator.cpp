@@ -116,11 +116,8 @@ int main()
         //Calculate hits:
         hits inflictedHits(attacksF, crit, toHit, susHitsStr);
 
-
         //Calculate wounds:
-        double woundsHit;
-
-        woundsHit = CalculateNumberOfWounds(inflictedHits, lethalHits, strength, toughness);
+        double woundsHit = CalculateNumberOfWounds(inflictedHits, lethalHits, strength, toughness);
 
         std::cout << " Number of Attacks: " << attacksF << "\n";
         std::cout << " Damage of weapon: " << DMG << "\n";
